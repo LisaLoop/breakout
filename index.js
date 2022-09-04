@@ -110,7 +110,7 @@ const initializeBalls = (width, height, color) => {
       // position: { x: canvas.width / 2, y: canvas.height / 2 },
       rect: { width, height, fill: color },
       direction: { x: 0.7, y: 0.7 },
-      speed: 2
+      speed: 6
     }
   ];
 };
@@ -119,7 +119,7 @@ const initializePaddle = (x, y, width, height, color) => {
   return {
     position: { x, y },
     rect: { width, height, fill: color },
-    speed: 5
+    speed: 8
   };
 };
 
