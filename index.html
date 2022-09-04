@@ -2,19 +2,33 @@
 <head>
         <script src="index.js" type="module"></script>
         <style>
+                @media only screen and (max-width: 500px){
+                        canvas {
+                                display: none !important;
+                        }
+                        h1::after {
+                                content: "This game is best experienced with a keyboard."
+                        }
+                }
                 body {
                         padding: 0;
                         margin: 0;
                         overflow-y: hidden;
-                        background-color: rgb(30,30,30);
+                        background-color: rgb(30, 30, 30);
                 }
                 canvas {
-                        display:block;
+                        display: block;
                         margin: 0 auto;
                         margin-top: 1rem;
                 }
         </style>
 </head>
 <body>
+        <h1 style="font-family:avenir,sans-serif;text-align:center;color:white">
+                Web Breakout!
+        </h1>
         <canvas></canvas>
+        <footer style="color:white; text-align: center;">
+                <span>Interested in collaborating? <a style="color:lightblue" href="mailto:lisa.lehrman@gmail.com">Contact me</a></span>
+        </footer>
 </body>
